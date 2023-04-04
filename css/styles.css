@@ -1,0 +1,361 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+:root {
+  --primary-violeta: #8b48bf;
+  --primary-celeste: #3cddf3;
+  --primary-blanco: #ffffff;
+  --primary-negro: #000;
+  --neutro-azul-grisaceo: #1e1e26;
+  --neutro-azul-oscuro: #232851;
+  --neutro-gris: #f9f9f9;
+}
+html {
+  font-size: 62.5%;
+}
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.hamburger-menu {
+  display: none;
+}
+
+
+header {
+  padding: 25px 0;
+  background-color: var(--neutro-gris);
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header a {
+  text-decoration: none;
+  color: var(--primary-negro);
+}
+button {
+  border: none;
+}
+
+.menu-container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 15px;
+  color: var(--primary-negro);
+}
+.menu-container li:hover {
+  opacity: 0.5;
+}
+.purple-button {
+  width: 134px;
+  height: 44px;
+  background-color: var(--primary-violeta);
+  border-radius: 50px;
+  color: var(--primary-blanco);
+}
+.purple-button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.cover-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  margin-bottom: 5rem;
+}
+
+.tournament-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 45rem;
+  gap: 2rem;
+}
+
+.tournament-container h2 {
+  text-align: right;
+  font-weight: 700;
+  font-size: 5rem;
+  color: var(--neutro-azul-oscuro);
+}
+
+.tournament-container p {
+  font-weight: 500;
+  font-size: 1.6rem;
+  text-align: center;
+  color: var(--primary-negro);
+}
+
+
+.container-advantages-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4rem 0rem;
+  background-color: var(--primary-violeta);
+}
+
+.container-advantages-info h3 {
+  width: 48rem;
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: var(--primary-blanco);
+}
+.container-advantages-info p {
+  width: 48rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--primary-blanco);
+}
+.advantages-features-container {
+  counter-reset: numero 0;
+  padding: 5rem 0rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.advantages-features-container button {
+  width: 7rem;
+  height: 4.3rem;
+  color: var(--primary-blanco);
+  background-color: var(--primary-violeta);
+  border-radius: 30px;
+}
+.advantages-features-container h4 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--neutro-azul-oscuro);
+  padding-bottom: 25px;
+}
+.advantages-features-container p {
+  padding-left: 8.5rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #b3b2b7;
+}
+.feature {
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 40%;
+}
+.feature h4::before {
+  counter-increment: numero;
+  margin-right: 2.5rem;
+  content: "0" counter(numero);
+  background-color: var(--primary-violeta);
+  border-radius: 30px;
+  padding: 1rem 2.5rem;
+  width: 7rem;
+  height: 4.3rem;
+  color: var(--primary-blanco);
+}
+
+.players-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 0rem 10rem;
+}
+.players-section h3 {
+  width: 100%;
+  margin-bottom: 9rem;
+  font-size: 3.9rem;
+  font-weight: 700;
+  color: var(--neutro-azul-oscuro);
+  text-align: center;
+}
+.players {
+  padding: 0rem 0.5rem 1rem 0.5rem;
+  width: 33%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 3rem;
+  gap: 20px;
+  background-color: #fafafa;
+}
+.players img {
+  display: block;
+  margin-top: -3.75rem;
+  width: 7.5rem;
+  height: 7.5rem;
+}
+.players h5 {
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--neutro-azul-oscuro);
+}
+.players p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #b9b9c1;
+}
+.players-section button {
+  margin-bottom: 3rem;
+}
+.subscription-section {
+  margin-top: 5rem;
+  width: 100%;
+  height: 70%;
+}
+
+.subscription-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4rem 0rem;
+  background-color: var(--primary-violeta);
+}
+.subscription-container h3 {
+  width: 480px;
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--primary-blanco);
+}
+.subscription-container button {
+  color: var(--primary-violeta);
+  text-align: center;
+  width: 13rem;
+  height: 4rem;
+  border-radius: 50px;
+  background-color: var(--primary-blanco);
+}
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 24rem;
+  background-color: #000;
+  color: white;
+}
+.links-footer {
+  line-height: 23px;
+  list-style: none;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--neutro-gris);
+}
+.logo-social-media-container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  height: 100%;
+  justify-content: space-evenly;
+}
+.logo-social-media-container a {
+  font-size: 2rem;
+  color: var(--primary-blanco);
+}
+.social-media {
+  display: flex;
+  gap: 10px;
+}
+.form-copyright-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: space-evenly;
+}
+.form-copyright-container input {
+  padding: 10px;
+  background-color: var(--primary-blanco);
+  border-radius: 50px;
+}
+.purple-button-footer {
+  width: 63px;
+  height: 42px;
+  background-color: var(--primary-violeta);
+  color: var(--primary-blanco);
+  border-radius: 50px;
+}
+
+@media (max-width: 480px) {
+  /* ESTILOS HEADER */
+  .hamburger-menu {
+    display: flex;
+    align-items: center;
+  }
+  header button ,.menu-container {
+    display: none;
+  }
+  /* SECCION PORTADA */
+  .cover-section {
+    flex-direction: column;
+  }
+  .cover-section img {
+    width: 40rem;
+    height: 34rem;
+  }
+  /* REVISAAAAAR */
+/*   .container-advantages-info{
+    display: flex;
+    flex-direction: column;
+  } */
+  /* ESTILOS SECCION DE VENTAJAS */
+
+  .advantages-features-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .feature h4{
+      width: 100%;
+      background-color: rgba(139, 72, 191, 0.3);
+  }
+  /* SECCION DE JUGADORES*/
+  .players-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem 0.5rem;
+  }
+  .players{
+    width: 100%;
+    padding: 0rem;
+  }
+  .players-section article:nth-child(2),
+  .players-section article:nth-child(3) {
+    display: none;
+  }
+  /* SECCION DE SUBSCRIPCION */
+  .subscription-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-celeste);
+    gap: 2rem;
+  }
+  .subscription-container h3{
+    text-align: center;
+    width: 70%;
+  }
+  .subscription-container button{
+    width: 13rem;
+    height: 4rem;
+    background-color: var(--neutro-azul-oscuro);
+    color: var(--primary-blanco);
+  }
+}
