@@ -375,6 +375,7 @@ footer p {
   .container-advantages-info{
     display: flex;
     flex-direction: column;
+    background-color: var(--primary-celeste);
   }   
   .container-advantages-info h3,p{
     padding-left: 2rem;
