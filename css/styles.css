@@ -4,6 +4,8 @@
   margin: 0px;
   font-family: "Be Vietnam Pro", sans-serif;
 }
+
+/* DECLARACION VARIABLES DE COLORES */
 :root {
   --primary-violeta: #8b48bf;
   --primary-celeste: #3cddf3;
@@ -13,9 +15,12 @@
   --neutro-azul-oscuro: #232851;
   --neutro-gris: #f9f9f9;
 }
+
+/* DECLARACION DE FONT SIZE PARA MEDIDAS REM */
 html {
   font-size: 62.5%;
 }
+
 main {
   width: 100%;
   display: flex;
@@ -23,11 +28,13 @@ main {
   margin: 0 auto;
   flex-wrap: wrap;
 }
+
+/* SE OCULTA MENU HAMBURGESA EN VISTA DE ESCRITORIO */
 .hamburger-menu {
   display: none;
 }
 
-
+/* ESTILOS DEL HEADER */
 header {
   padding: 25px 0;
   background-color: var(--neutro-gris);
@@ -40,10 +47,23 @@ header a {
   text-decoration: none;
   color: var(--primary-negro);
 }
+/* ELIMINACION DE BORDE EN BOTONES */
 button {
   border: none;
 }
 
+/* SE APLICA OPACIDAD BAJA AL PASAR CON EL CURSOR */
+button:hover{
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+li:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+/* ESTILOS LISTAS DE MENU NAVEGACIONES */
 .menu-container ul {
   display: flex;
   justify-content: center;
@@ -52,9 +72,8 @@ button {
   gap: 15px;
   color: var(--primary-negro);
 }
-.menu-container li:hover {
-  opacity: 0.5;
-}
+
+/* ESTILOS DE BOTON VIOLETA */
 .purple-button {
   width: 134px;
   height: 44px;
@@ -62,11 +81,8 @@ button {
   border-radius: 50px;
   color: var(--primary-blanco);
 }
-.purple-button:hover {
-  cursor: pointer;
-  opacity: 0.5;
-}
 
+/* ESTILOS DE SECCION PRINCIPAL */
 .cover-section {
   display: flex;
   justify-content: space-around;
@@ -75,6 +91,7 @@ button {
   margin-bottom: 5rem;
 }
 
+/* ESTILOS INFORMACION DEL TORNEO */
 .tournament-container {
   display: flex;
   flex-direction: column;
@@ -97,6 +114,7 @@ button {
   color: var(--primary-negro);
 }
 
+/* ESTILOS DE INTRODUCCION A VENTAJAS */
 .container-advantages-info {
   display: flex;
   justify-content: space-around;
@@ -117,6 +135,8 @@ button {
   font-weight: 500;
   color: var(--primary-blanco);
 }
+
+/* ESTILOS DE CONTENEDOR DE VENTAJAS ENUMERADAS */
 .advantages-features-container {
   counter-reset: numero 0;
   padding: 5rem 0rem;
@@ -146,6 +166,8 @@ button {
   font-weight: 500;
   color: #b3b2b7;
 }
+
+/* ESTILOS VENTAJAS */
 .feature {
   margin-bottom: 2.5rem;
   display: flex;
@@ -154,6 +176,8 @@ button {
   align-items: center;
   width: 40%;
 }
+
+/* ENUMERACION DE VENTAJAS  */
 .feature h4::before {
   counter-increment: numero;
   margin-right: 2.5rem;
@@ -166,6 +190,7 @@ button {
   color: var(--primary-blanco);
 }
 
+/* ESTILOS DE SECCION DE JUGADORES */
 .players-section {
   display: flex;
   flex-wrap: wrap;
@@ -181,6 +206,10 @@ button {
   color: var(--neutro-azul-oscuro);
   text-align: center;
 }
+.players-section button {
+  margin-bottom: 3rem;
+}
+/* ESTILOS JUGADORES */
 .players {
   padding: 0rem 0.5rem 1rem 0.5rem;
   width: 33%;
@@ -209,15 +238,15 @@ button {
   font-weight: 500;
   color: #b9b9c1;
 }
-.players-section button {
-  margin-bottom: 3rem;
-}
+
+/* ESTILOS SECCION DE SUBSCRIPCION */
 .subscription-section {
   margin-top: 5rem;
   width: 100%;
   height: 70%;
 }
 
+/* ESTILOS  MEJORES EQUIPOS DEL AÑO */
 .subscription-container {
   display: flex;
   justify-content: space-around;
@@ -240,6 +269,7 @@ button {
   border-radius: 50px;
   background-color: var(--primary-blanco);
 }
+
 footer {
   display: flex;
   flex-wrap: wrap;
@@ -249,11 +279,33 @@ footer {
   background-color: #000;
   color: white;
 }
+
+/* ESTILOS CONTENEDOR GENERAL DEL FOOTER */
 .footer-content-container{
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
+
+/* ESTILOS DE REDES SOCIALES  */
+.logo-social-media-container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  height: 13rem;
+  justify-content: space-between;
+}
+.logo-social-media-container a {
+  font-size: 2rem;
+  color: var(--primary-blanco);
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* ESTILOS DE MENU DE NAVEGACION DEL FOOTER */
 .links-footer {
   width: 45rem;
   height: 13rem;
@@ -271,22 +323,7 @@ footer {
   width: 50%;
 }
 
-.logo-social-media-container {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  height: 13rem;
-  justify-content: space-between;
-}
-.logo-social-media-container a {
-  font-size: 2rem;
-  color: var(--primary-blanco);
-}
-.social-media {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
+/* ESTILOS DEL FORMULARIO */
 .form-container {
   display: flex;
   justify-content: space-evenly;
@@ -310,15 +347,18 @@ footer p {
   border-radius: 50px;
 }
 
+/* DISEÑO ADAPTATIVO PARA MOBILE */
+
 @media (max-width: 480px) {
   /* ESTILOS HEADER */
   .hamburger-menu {
     display: flex;
     align-items: center;
   }
-  header button ,.menu-container {
+  header button , .menu-container {
     display: none;
   }
+
   /* SECCION PORTADA */
   .cover-section {
     flex-direction: column;
@@ -327,14 +367,21 @@ footer p {
     width: 40rem;
     height: 34rem;
   }
+  .tournament-container{
+    padding-right: 3rem;
+  }
 
+  /* ESTILOS INTRODUCCION A VENTAJAS */
   .container-advantages-info{
     display: flex;
     flex-direction: column;
   }   
-  .container-advantages-info h3{
+  .container-advantages-info h3,p{
+    padding-left: 2rem;
     margin-bottom: 25px;
   }
+
+  /* ESTILOS DE VENTAJAS ENUMERADAS */
   .advantages-features-container {
     display: flex;
     flex-direction: column;
@@ -357,19 +404,22 @@ footer p {
     width: 100%;
     padding: 0rem;
   }
+
+  /* SE OCULTAN DOS JUGADORES */
   .players-section article:nth-child(2),
   .players-section article:nth-child(3) {
     display: none;
   }
+
   /* SECCION DE SUBSCRIPCION */
   .subscription-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--primary-celeste);
-    gap: 2rem;
   }
   .subscription-container h3{
+    padding-bottom: 2rem;
     text-align: center;
     width: 70%;
   }
@@ -379,27 +429,35 @@ footer p {
     background-color: var(--neutro-azul-oscuro);
     color: var(--primary-blanco);
   }
+  /* ESTILOS DEL FOOTER */
   footer{
     padding: 5rem 0;
   }
   footer p{
     text-align: center;
   }
+
+  /* CONTENEDOR GENERAL DEL FOOTER */
   .footer-content-container{
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 3rem;
   }
+
+  /* ESTILOS REDES SOCIALES Y LOGO */
   .logo-social-media-container{
     flex-direction: column-reverse;
   }
   .social-media{
     gap: 50px;
   }
+
+  /* ESTILOS MENU DE NAVEGACION */
   .links-footer{
     margin: 0 auto 5rem auto;
 
   }
+  /* ESTILOS FORMULARIO */
   .form-container{
     margin-bottom: 3rem;
     padding: 0 5rem;
