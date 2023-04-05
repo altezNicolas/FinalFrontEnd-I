@@ -7,13 +7,16 @@
 
 /* DECLARACION VARIABLES DE COLORES */
 :root {
-  --primary-violeta: #8b48bf;
-  --primary-celeste: #3cddf3;
-  --primary-blanco: #ffffff;
-  --primary-negro: #000;
-  --neutro-azul-grisaceo: #1e1e26;
-  --neutro-azul-oscuro: #232851;
-  --neutro-gris: #f9f9f9;
+  --primary-purple: #8b48bf;
+  --primary-sky-blue: #3cddf3;
+  --primary-white: #ffffff;
+  --primary-black: #000;
+  --neutro-grayish-blue: #1e1e26;
+  --neutro-dark-blue: #232851;
+  --neutro-grey: #f9f9f9;
+  --background-grey : #b3b2b7;
+  --background-purple : rgba(139, 72, 191, 0.3);
+
 }
 
 /* DECLARACION DE FONT SIZE PARA MEDIDAS REM */
@@ -37,7 +40,7 @@ main {
 /* ESTILOS DEL HEADER */
 header {
   padding: 25px 0;
-  background-color: var(--neutro-gris);
+  background-color: var(--neutro-grey);
   font-size: 1.3rem;
   display: flex;
   justify-content: space-around;
@@ -45,7 +48,7 @@ header {
 }
 header a {
   text-decoration: none;
-  color: var(--primary-negro);
+  color: var(--primary-black);
 }
 /* ELIMINACION DE BORDE EN BOTONES */
 button {
@@ -70,16 +73,16 @@ li:hover {
   align-items: center;
   list-style: none;
   gap: 15px;
-  color: var(--primary-negro);
+  color: var(--primary-black);
 }
 
 /* ESTILOS DE BOTON VIOLETA */
 .purple-button {
   width: 134px;
   height: 44px;
-  background-color: var(--primary-violeta);
+  background-color: var(--primary-purple);
   border-radius: 50px;
-  color: var(--primary-blanco);
+  color: var(--primary-white);
 }
 
 /* ESTILOS DE SECCION PRINCIPAL */
@@ -104,14 +107,14 @@ li:hover {
   text-align: right;
   font-weight: 700;
   font-size: 5rem;
-  color: var(--neutro-azul-oscuro);
+  color: var(--neutro-dark-blue);
 }
 
 .tournament-container p {
   font-weight: 500;
   font-size: 1.6rem;
   text-align: center;
-  color: var(--primary-negro);
+  color: var(--primary-black);
 }
 
 /* ESTILOS DE INTRODUCCION A VENTAJAS */
@@ -120,20 +123,20 @@ li:hover {
   justify-content: space-around;
   align-items: center;
   padding: 4rem 0rem;
-  background-color: var(--primary-violeta);
+  background-color: var(--primary-purple);
 }
 
 .container-advantages-info h3 {
   width: 48rem;
   font-size: 3.6rem;
   font-weight: 700;
-  color: var(--primary-blanco);
+  color: var(--primary-white);
 }
 .container-advantages-info p {
   width: 48rem;
   font-size: 1.6rem;
   font-weight: 500;
-  color: var(--primary-blanco);
+  color: var(--primary-white);
 }
 
 /* ESTILOS DE CONTENEDOR DE VENTAJAS ENUMERADAS */
@@ -151,14 +154,14 @@ li:hover {
 .advantages-features-container h4 {
   font-size: 1.6rem;
   font-weight: 700;
-  color: var(--neutro-azul-oscuro);
+  color: var(--neutro-dark-blue);
   padding-bottom: 25px;
 }
 .advantages-features-container p {
   padding-left: 8.5rem;
   font-size: 1.6rem;
   font-weight: 500;
-  color: #b3b2b7;
+  color: var(--background-grey);
 }
 
 /* ESTILOS VENTAJAS */
@@ -175,13 +178,13 @@ li:hover {
 .feature h4::before {
   counter-increment: numero;
   margin-right: 2.5rem;
-  content: "0" counter(numero);
-  background-color: var(--primary-violeta);
+  content: counter(numero, decimal-leading-zero);;
+  background-color: var(--primary-purple);
   border-radius: 30px;
   padding: 1rem 2.5rem;
   width: 7rem;
   height: 4.3rem;
-  color: var(--primary-blanco);
+  color: var(--primary-white);
 }
 
 /* ESTILOS DE SECCION DE JUGADORES */
@@ -197,7 +200,7 @@ li:hover {
   margin-bottom: 9rem;
   font-size: 3.9rem;
   font-weight: 700;
-  color: var(--neutro-azul-oscuro);
+  color: var(--neutro-dark-blue);
   text-align: center;
 }
 .players-section button {
@@ -213,7 +216,6 @@ li:hover {
   text-align: center;
   margin-bottom: 3rem;
   gap: 20px;
-  background-color: #fafafa;
 }
 .players img {
   display: block;
@@ -225,12 +227,12 @@ li:hover {
   width: 100%;
   font-size: 1.6rem;
   font-weight: 700;
-  color: var(--neutro-azul-oscuro);
+  color: var(--neutro-dark-blue);
 }
 .players p {
   font-size: 1.6rem;
   font-weight: 500;
-  color: #b9b9c1;
+  color: var(--background-grey);
 }
 
 /* ESTILOS SECCION DE SUBSCRIPCION */
@@ -246,22 +248,22 @@ li:hover {
   justify-content: space-around;
   align-items: center;
   padding: 4rem 0rem;
-  background-color: var(--primary-violeta);
+  background-color: var(--primary-purple);
 }
 .subscription-container h3 {
   width: 480px;
   font-size: 3.6rem;
   font-style: normal;
   font-weight: 700;
-  color: var(--primary-blanco);
+  color: var(--primary-white);
 }
 .subscription-container button {
-  color: var(--primary-violeta);
+  color: var(--primary-purple);
   text-align: center;
   width: 13rem;
   height: 4rem;
   border-radius: 50px;
-  background-color: var(--primary-blanco);
+  background-color: var(--primary-white);
 }
 
 footer {
@@ -270,8 +272,8 @@ footer {
   justify-content: space-between;
   width: 100%;
   padding: 5rem 17rem;
-  background-color: #000;
-  color: white;
+  background-color: var(--primary-black);
+  color: var(--primary-white);
 }
 
 /* ESTILOS CONTENEDOR GENERAL DEL FOOTER */
@@ -291,7 +293,7 @@ footer {
 }
 .logo-social-media-container a {
   font-size: 2rem;
-  color: var(--primary-blanco);
+  color: var(--primary-white);
 }
 .social-media {
   display: flex;
@@ -309,7 +311,7 @@ footer {
   list-style: none;
   font-size: 1.6rem;
   font-weight: 400;
-  color: var(--neutro-gris);
+  color: var(--neutro-grey);
 }
 .links-footer li{
   margin-bottom: 1rem;
@@ -326,7 +328,7 @@ footer {
 .form-container input {
   padding: 1rem;
   height: 4.5rem;
-  background-color: var(--primary-blanco);
+  background-color: var(--primary-white);
   border-radius: 50px;
 }
 footer p {
@@ -336,8 +338,8 @@ footer p {
 .purple-button-footer {
   width: 63px;
   height: 42px;
-  background-color: var(--primary-violeta);
-  color: var(--primary-blanco);
+  background-color: var(--primary-purple);
+  color: var(--primary-white);
   border-radius: 50px;
 }
 
@@ -369,7 +371,7 @@ footer p {
   .container-advantages-info{
     display: flex;
     flex-direction: column;
-    background-color: var(--primary-celeste);
+    background-color: var(--primary-sky-blue);
   }   
   .container-advantages-info h3,p{
     padding-left: 2rem;
@@ -386,7 +388,7 @@ footer p {
   }
   .feature h4{
       width: 100%;
-      background-color: rgba(139, 72, 191, 0.3);
+      background-color: var(--background-purple);
   }
   /* SECCION DE JUGADORES*/
   .players-section {
@@ -411,7 +413,7 @@ footer p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--primary-celeste);
+    background-color: var(--primary-sky-blue);
   }
   .subscription-container h3{
     padding-bottom: 2rem;
@@ -421,8 +423,8 @@ footer p {
   .subscription-container button{
     width: 13rem;
     height: 4rem;
-    background-color: var(--neutro-azul-oscuro);
-    color: var(--primary-blanco);
+    background-color: var(--neutro-dark-blue);
+    color: var(--primary-white);
   }
   /* ESTILOS DEL FOOTER */
   footer{
