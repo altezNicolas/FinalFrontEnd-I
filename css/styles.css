@@ -147,13 +147,7 @@ li:hover {
   align-items: center;
   gap: 3rem;
 }
-.advantages-features-container button {
-  width: 7rem;
-  height: 4.3rem;
-  color: var(--primary-blanco);
-  background-color: var(--primary-violeta);
-  border-radius: 30px;
-}
+
 .advantages-features-container h4 {
   font-size: 1.6rem;
   font-weight: 700;
